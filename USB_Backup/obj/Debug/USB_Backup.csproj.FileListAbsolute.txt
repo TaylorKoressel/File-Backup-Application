@@ -1,0 +1,86 @@
+C:\Users\Taylor Koressel\Desktop\USB_Backup\USB_Backup\bin\Debug\USB_Backup.exe.config
+C:\Users\Taylor Koressel\Desktop\USB_Backup\USB_Backup\bin\Debug\USB_Backup.exe
+C:\Users\Taylor Koressel\Desktop\USB_Backup\USB_Backup\bin\Debug\USB_Backup.pdb
+C:\Users\Taylor Koressel\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csprojResolveAssemblyReference.cache
+C:\Users\Taylor Koressel\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.FormUI.resources
+C:\Users\Taylor Koressel\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.Properties.Resources.resources
+C:\Users\Taylor Koressel\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csproj.GenerateResource.Cache
+C:\Users\Taylor Koressel\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csproj.CoreCompileInputs.cache
+C:\Users\Taylor Koressel\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.exe
+C:\Users\Taylor Koressel\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.pdb
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\USB_Backup\bin\Debug\USB_Backup.exe.config
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\USB_Backup\bin\Debug\USB_Backup.exe
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\USB_Backup\bin\Debug\USB_Backup.pdb
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csprojResolveAssemblyReference.cache
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\USB_Backup\obj\Debug\USB_Backup.FormUI.resources
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\USB_Backup\obj\Debug\USB_Backup.Properties.Resources.resources
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csproj.GenerateResource.cache
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csproj.CoreCompileInputs.cache
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\USB_Backup\obj\Debug\USB_Backup.exe
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\USB_Backup\obj\Debug\USB_Backup.pdb
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\USB_Backup.exe.config
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\USB_Backup.exe
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\USB_Backup.pdb
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\obj\Debug\USB_Backup.FormUI.resources
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\obj\Debug\USB_Backup.Properties.Resources.resources
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csproj.GenerateResource.cache
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csproj.CoreCompileInputs.cache
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\obj\Debug\USB_Backup.exe
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\obj\Debug\USB_Backup.pdb
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Auth.dll
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Core.dll
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.dll
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Drive.v3.dll
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Newtonsoft.Json.dll
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\System.Net.Http.dll
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.pdb
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.xml
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Auth.xml
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Core.pdb
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Core.xml
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Drive.v3.pdb
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Drive.v3.xml
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\Newtonsoft.Json.xml
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csproj.CopyComplete
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csprojResolveAssemblyReference.cache
+C:\Users\TheSteadfastWog\Desktop\GO-TIME\File_Backup_App\USB_Backup\USB_Backup\bin\Debug\client_secret.json
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\client_secret.json
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\USB_Backup.exe.config
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\USB_Backup.exe
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\USB_Backup.pdb
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Auth.dll
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Core.dll
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.dll
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Drive.v3.dll
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Newtonsoft.Json.dll
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\System.Net.Http.dll
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.pdb
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.xml
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Auth.xml
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Core.pdb
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Core.xml
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Drive.v3.pdb
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Google.Apis.Drive.v3.xml
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\bin\Debug\Newtonsoft.Json.xml
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csprojResolveAssemblyReference.cache
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.FormUI.resources
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.Properties.Resources.resources
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csproj.GenerateResource.cache
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csproj.CoreCompileInputs.cache
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.csproj.CopyComplete
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.exe
+C:\Users\TheSteadfastWog\Desktop\USB_Backup\USB_Backup\obj\Debug\USB_Backup.pdb
