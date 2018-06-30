@@ -22,197 +22,173 @@ namespace USB_Backup
 {
     public partial class FormUI : Form
     {
-        String startDir = "C:\\Users\\TheSteadfastWog\\Desktop\\startDIR";
-        String targetDir = "C:\\Users\\TheSteadfastWog\\Desktop\\targetDIR\\usbBackup";
-        static string[] Scopes = { DriveService.Scope.Drive };
+        String source = "";
+        String target = "";
+        String uploadType = "File";
 
         public FormUI()
         {
             InitializeComponent();
         }
 
-        private void FormUI_Load(object sender, EventArgs e)
+
+        private void btnChooseFile_Click(object sender, EventArgs e)
         {
-            tbStartDir.Text = startDir;
-            tbTargetDir.Text = targetDir;
+            openFileDialog1 = new OpenFileDialog();
 
-            // Add time stamp to targetDir
-            DateTime Now = DateTime.Today;
-            String timeStamp = Now.ToString("d");
-
-
-            //// Define parameters of request.
-            //FilesResource.ListRequest listRequest = driveService.Files.List();
-            //listRequest.PageSize = 10;
-            //listRequest.Fields = "nextPageToken, files(id, name)";
-
-            //// List files.
-            //IList<Google.Apis.Drive.v3.Data.File> files = listRequest.Execute()
-            //    .Files;
-            //Console.WriteLine("Files:");
-            //if (files != null && files.Count > 0)
-            //{
-            //    foreach (var file in files)
-            //    {
-            //        Console.WriteLine("{0} ({1})", file.Name, file.Id);
-            //    }
-            //}
-            //else
-            //{
-            //    Console.WriteLine("No files found.");
-            //}
-            //Console.Read();
-        }
-
-        private String DefaultTargetDir()
-        {
-            DateTime date = new DateTime();
-            String now;
-            now = date.ToString();
-            now.Replace("/", ".");
-            String TargetDir = "USB_Backup_" + now;
-            return TargetDir;
-        }
-
-        private void btnFromChoose_Click(object sender, EventArgs e)
-        {
-            if (fbdStartDir.ShowDialog() == DialogResult.OK)
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                startDir = fbdStartDir.SelectedPath;
-                tbStartDir.Text = startDir;
+                source = openFileDialog1.FileName;
+                tbfile.Text = source;
             }
         }
 
-        private void btnToChoose_Click(object sender, EventArgs e)
+        //private void btnFromChoose_Click(object sender, EventArgs e)
+        //{
+        //    openFileDialog1 = new OpenFileDialog();
+
+        //    if (openFileDialog1.ShowDialog() == DialogResult.OK)
+        //    {
+        //        source = openFileDialog1.FileName;
+        //        tbfile.Text = source;
+        //    }
+        //}
+
+
+        private void btnchooseFolder_Click_1(object sender, EventArgs e)
+        {
+
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                source = folderBrowserDialog1.SelectedPath;
+                tbFolder.Text = source;
+            }
+        }
+
+        private void btnToChoose_Click_1(object sender, EventArgs e)
         {
             if (fbdTargetDir.ShowDialog() == DialogResult.OK)
             {
-                targetDir = fbdTargetDir.SelectedPath;
-                tbTargetDir.Text = targetDir;
-            }
-        }
+                target = fbdTargetDir.SelectedPath;
+                tbTargetDir.Text = target;
 
-        //private void btnCopy_Click(object sender, EventArgs e)
-        //{
-        //    String newFolder = targetDir;
-
-        //    DirectoryInfo diSource = new DirectoryInfo(startDir);
-        //    DirectoryInfo diTarget = new DirectoryInfo(newFolder);
-        //    CopyAll(diSource, diTarget);
-        //}
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnGetFile_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbLocal_CheckedChanged(object sender, EventArgs e)
-        {
-            if(gbLocal.Enabled)
-            {
-                gbLocal.Enabled = false; 
-            }
-            else
-            {
-                gbLocal.Enabled = true;
-            } 
-        }
-
-        private void cbCloud_CheckedChanged(object sender, EventArgs e)
-        {
-            if (gbCloud.Enabled)
-            {
-                gbCloud.Enabled = false;
-            }
-            else
-            {
-                gbCloud.Enabled = true;
             }
         }
 
         private void btnGoPage_2_Click(object sender, EventArgs e)
         {
-            gbPage_2.Visible = true;
             gbPage_1.Visible = false;
-
-            // Copy to local storage
-            //String newFolder = targetDir;
-            //DirectoryInfo diSource = new DirectoryInfo(startDir);
-            //DirectoryInfo diTarget = new DirectoryInfo(newFolder);
-            //CopyAll(diSource, diTarget);
         }
 
-        public static void CopyAll(DirectoryInfo source, DirectoryInfo target)
+        public static void CopyAll(String uploadType, FileInfo file, DirectoryInfo folder, DirectoryInfo target)
         {
-            Directory.CreateDirectory(target.FullName);
-            // Copy each file into the new directory.
-            foreach (FileInfo fi in source.GetFiles())
+            if (uploadType == "File")
             {
-                Console.WriteLine(@"Copying {0}\{1}", target.FullName, fi.Name);
-                fi.CopyTo(Path.Combine(target.FullName, fi.Name), true);
+                Directory.CreateDirectory(target.FullName);
+                String fileName = file.Name;
+                fileName += DateTime.Now.ToString();
+                
+                file.CopyTo(Path.Combine(target.FullName, file.Name), false);
+            }
+            else
+            {
+                foreach (FileInfo fi in folder.GetFiles())
+                {
+                    fi.CopyTo(Path.Combine(target.FullName, fi.Name), true);
+                }
+
+                // Copy each subdirectory using recursion.
+                foreach (DirectoryInfo diSourceSubDir in folder.GetDirectories())
+                {
+                    DirectoryInfo nextTargetSubDir = target.CreateSubdirectory(diSourceSubDir.Name);
+                    CopyAll(uploadType, file, diSourceSubDir, nextTargetSubDir);
+                }
             }
 
-            // Copy each subdirectory using recursion.
-            foreach (DirectoryInfo diSourceSubDir in source.GetDirectories())
-            {
-                DirectoryInfo nextTargetSubDir = target.CreateSubdirectory(diSourceSubDir.Name);
-                CopyAll(diSourceSubDir, nextTargetSubDir);
-            }
+            //// Copy subDir's and files into the new directory.
+            //foreach (FileInfo fi in source.GetFiles())
+            //{
+            //    Console.WriteLine(@"Copying {0}\{1}", target.FullName, fi.Name);
+            //    fi.CopyTo(Path.Combine(target.FullName, fi.Name), true);
+            //}
+
+            //// Copy each subdirectory using recursion.
+            //foreach (DirectoryInfo diSourceSubDir in source.GetDirectories())
+            //{
+            //    DirectoryInfo nextTargetSubDir = target.CreateSubdirectory(diSourceSubDir.Name);
+            //    CopyAll(diSourceSubDir, nextTargetSubDir);
+            //}
         }
 
         private void btnGoPage_3_Click(object sender, EventArgs e)
         {
-            gbPage_3.Visible = true;
-            gbPage_2.Visible = false;
+            
 
-            // Login and create credential file
-            string credPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            credPath = Path.Combine(credPath, ".credentials/credential.json");
-
-            UserCredential credential;
-            using (var stream = new FileStream("client_secret.json", FileMode.Open, FileAccess.Read))
+            if (tbTargetDir.Text != "")
             {
-                credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
-                    GoogleClientSecrets.Load(stream).Secrets,
-                    Scopes,
-                    "user",
-                    CancellationToken.None,
-                    new FileDataStore(credPath, true)).Result;
+                if (tbfile.Text == "" && tbFolder.Text == "")
+                {
+                    lblError.Visible = true;
+                }
+                else
+                {
+                    lblError.Visible = false;
+                    gbPage_3.Visible = true;
 
-                Console.WriteLine("Credential file saved to: " + credPath);
+                    if (uploadType == "File")
+                    {
+                        FileInfo Source = new FileInfo(source);
+                        DirectoryInfo Target = new DirectoryInfo(target);
+                        DirectoryInfo placeHolder = new DirectoryInfo("placeHolder");
+                        CopyAll("File", Source, placeHolder, Target);
+                    }
+                    else
+                    {
+                        DirectoryInfo Source = new DirectoryInfo(source);
+                        DirectoryInfo Target = new DirectoryInfo(target);
+                        FileInfo placeHolder = new FileInfo("placeHolder");
+                        CopyAll("Folder", placeHolder, Source, Target);
+                    }
+                }
             }
-
-            // Create Google Drive service
-            DriveService driveService = new DriveService(new BaseClientService.Initializer()
+            else
             {
-                HttpClientInitializer = credential,
-                ApplicationName = "USB-Backup",
-            });
-
-            // Upload file
-            var fileMetadata = new Google.Apis.Drive.v3.Data.File()
-            {
-                Name = "TryItOut.txt"
-            };
-
-            String filePath = "C:\\Users\\TheSteadfastWog\\Desktop\\GO-TIME\\File_Backup_App\\USB_Backup\\USB_Backup\\Files\\test.txt";
-
-            FilesResource.CreateMediaUpload request;
-
-            using (var stream = new System.IO.FileStream(filePath, System.IO.FileMode.Open))
-            {
-                request = driveService.Files.Create(fileMetadata, stream, "text/plain");
-                request.Fields = "id";
-                request.Upload();
+                lblError.Visible = true;
             }
+        }
 
-            var file = request.ResponseBody;
-            Console.WriteLine("File ID: " + file.Id);
+
+        private void rbFile_CheckedChanged(object sender, EventArgs e)
+        {
+            if (gbFile.Enabled == true)
+            {
+                gbFile.Enabled = false;
+                uploadType = "folder";
+                Console.WriteLine(uploadType);
+            }
+            else
+            {
+                gbFile.Enabled = true;
+            }
+        }
+
+        private void rbFolder_CheckedChanged(object sender, EventArgs e)
+        {
+            if (gbFolder.Enabled == true)
+            {
+                gbFolder.Enabled = false;
+                uploadType = "file";
+                Console.WriteLine(uploadType);
+            }
+            else
+            {
+                gbFolder.Enabled = true;
+            }
+        }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
