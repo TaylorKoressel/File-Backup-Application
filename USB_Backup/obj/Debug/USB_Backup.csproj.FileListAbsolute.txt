@@ -117,3 +117,7 @@ C:\Users\TheSteadfastWog\Desktop\File-Backup-Application\USB_Backup\obj\Debug\US
 C:\Users\TheSteadfastWog\Desktop\File-Backup-Application\USB_Backup\obj\Debug\USB_Backup.csproj.CopyComplete
 C:\Users\TheSteadfastWog\Desktop\File-Backup-Application\USB_Backup\obj\Debug\USB_Backup.exe
 C:\Users\TheSteadfastWog\Desktop\File-Backup-Application\USB_Backup\obj\Debug\USB_Backup.pdb
+C:\Users\TheSteadfastWog\Desktop\File-Backup-Application\USB_Backup\bin\Debug\USB_Backup.exe.manifest
+C:\Users\TheSteadfastWog\Desktop\File-Backup-Application\USB_Backup\bin\Debug\USB_Backup.application
+C:\Users\TheSteadfastWog\Desktop\File-Backup-Application\USB_Backup\obj\Debug\USB_Backup.exe.manifest
+C:\Users\TheSteadfastWog\Desktop\File-Backup-Application\USB_Backup\obj\Debug\USB_Backup.application
